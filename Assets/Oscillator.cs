@@ -7,26 +7,37 @@ using System;
 */
 public class Oscillator : MonoBehaviour
 {
-float t;
-float g = 10f;
-float v0 = 0f;
-float h0 = 10f;
-float v = 0;
+
+	float t;
+
+	[SerializeField] float a = -10;
+	[SerializeField] float s = 10;
+	[SerializeField] float scale = 10;
+	float x;
+
     void Start()
     {
         t = 0;
-        transform.position = new Vector3(0,0,0);
+        transform.position += new Vector3(scale,0,0);
+        if (a > 0) a *= -1;
+        s = 0;
+        x = scale;
     }
  
     void Update()
     {
-    	t += Time.deltaTime;
-    	float delta_h = Math.Abs(transform.position.x - h0);
-    	v += Mathf.Sqrt(2 * g * delta_h);
-    	Debug.Log("v: "+ v+"\nt: "+t);
-    	Debug.Log("v*t: "+v * t);
+    	t+=Time.deltaTime;
 
-    	transform.position += new Vector3(v*t,0,0);
+    	s += a*Time.deltaTime;
+    	if(transform.position.x <= 0.1 && transform.position.x > 0)
+    	{
+    		if( (a < 0 && s < 0) ||  (a > 0 && s > 0))
+    		a *= -1;
+    	}
+    	
+    	x += s*Time.deltaTime;
+    	float y = -1*scale * Mathf.Cos(1.5f/scale * x);
+    	transform.position = new Vector3(x,y,0);
     }
 
 }
