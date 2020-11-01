@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 /**
-* This component resizes the object in continuous way (similiar to a heartbeat)
+* This component resizes the object in continuous way (similiar to a heartbeat).
 */
 public class Beating : MonoBehaviour
 {
