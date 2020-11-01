@@ -7,40 +7,40 @@ using UnityEngine;
 * This component will move the object in oscillator way
 */
 public class Oscillator : MonoBehaviour
-{
-    [SerializeField]
-    float acceleration = -10;
+{   
 
+    [Tooltip("Swing speed")]
     [SerializeField]
     float speed;
 
+    [Tooltip("Swing distance from center")]
     [SerializeField]
-    float scale = 10;
+    float scale;
 
-    [SerializeField]
-    float x;
+    // Holds the starting x coordinate
+    float startX;
+
+    // Holds the starting y coordinate
+    float startY;
 
     void Start()
     {
-        transform.position += new Vector3(scale, 0, 0);
-        if (acceleration > 0) acceleration *= -1;
-        speed = 0;
-        x = scale;
+        // Default values:
+        speed = 1;
+        scale = 5;
+        startX = transform.position.x;
+        startY = transform.position.y;
     }
 
     void Update()
     {
-        speed += acceleration * Time.deltaTime;
-        if (transform.position.x <= 0.1 && transform.position.x > 0)
-        {
-            if (
-                (acceleration < 0 && speed < 0) ||
-                (acceleration > 0 && speed > 0)
-            ) acceleration *= -1;
-        }
-
-        x += speed * Time.deltaTime;
+        // The boundries of x is represented by the Sin function 
+        float x = Mathf.Sin(Time.time * speed) * scale;
+        
+        // The boundries of y are limited according to the following function which we have created online
         float y = -1 * scale * Mathf.Cos(1.5f / scale * x);
-        transform.position = new Vector3(x, y, 0);
+        
+        // Change object position
+        transform.position = new Vector3(startX + x, startY+ y, 0);
     }
 }
