@@ -135,7 +135,7 @@ GameObject:
   - component: {fileID: 54476083}
   - component: {fileID: 54476082}
   m_Layer: 0
-  m_Name: Text_Resize
+  m_Name: TextResize
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -325,7 +325,7 @@ GameObject:
   - component: {fileID: 793128784}
   - component: {fileID: 793128788}
   m_Layer: 0
-  m_Name: Text_Disappear
+  m_Name: TextDisappear
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -541,7 +541,11 @@ Transform:
   m_LocalScale: {x: -2.9707227, y: 2.1485555, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
+<<<<<<< HEAD
   m_RootOrder: 3
+=======
+  m_RootOrder: 8
+>>>>>>> parent of 3e1449a... backup
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &852132563
 SpriteRenderer:
@@ -581,7 +585,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 8db6dcfcb4a0db64e8187846db5679e2, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -823,7 +827,7 @@ GameObject:
   - component: {fileID: 1235831173}
   - component: {fileID: 1235831172}
   m_Layer: 0
-  m_Name: Image_Background
+  m_Name: ImageBackground
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -891,7 +895,11 @@ Transform:
   m_LocalScale: {x: 1.4213363, y: 1.7056365, z: 0}
   m_Children: []
   m_Father: {fileID: 0}
+<<<<<<< HEAD
   m_RootOrder: 9
+=======
+  m_RootOrder: 7
+>>>>>>> parent of 3e1449a... backup
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1570210383
 GameObject:
@@ -907,7 +915,7 @@ GameObject:
   - component: {fileID: 1570210385}
   - component: {fileID: 1570210384}
   m_Layer: 0
-  m_Name: Text_Rotator
+  m_Name: TextRotator
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1196,8 +1204,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 02b820301a3103048ab19b3c9afb8dba, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  resize: 0
-  speed: 0
 --- !u!212 &1796946415
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1290,7 +1296,7 @@ GameObject:
   - component: {fileID: 1936001795}
   - component: {fileID: 1936001794}
   m_Layer: 0
-  m_Name: Text_Oscillator
+  m_Name: TextOscillator
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
