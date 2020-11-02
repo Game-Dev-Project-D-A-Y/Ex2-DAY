@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 /**
-* This component will show and Disappear the object everytime you'll click the mouse left button
+* This component will show and Disappear the object everytime you'll click the mouse left button !
 */
 public class Disappear : MonoBehaviour
 {
