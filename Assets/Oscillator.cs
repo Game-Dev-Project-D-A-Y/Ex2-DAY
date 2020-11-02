@@ -26,8 +26,8 @@ public class Oscillator : MonoBehaviour
     void Start()
     {
         // Default values:
-        speed = 1;
-        scale = 5;
+        speed = 2;
+        scale = 6;
         startX = transform.position.x;
         startY = transform.position.y;
     }
