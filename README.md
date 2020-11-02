@@ -1,2 +1,3 @@
 # Ex2-DAY
- Ex2
+ In this project we will develop our own computer game! 
+Join along to see our progress
