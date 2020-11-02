@@ -135,7 +135,7 @@ GameObject:
   - component: {fileID: 54476083}
   - component: {fileID: 54476082}
   m_Layer: 0
-  m_Name: Text_Resize
+  m_Name: TextResize
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -325,7 +325,7 @@ GameObject:
   - component: {fileID: 793128784}
   - component: {fileID: 793128788}
   m_Layer: 0
-  m_Name: Text_Disappear
+  m_Name: TextDisappear
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -823,7 +823,7 @@ GameObject:
   - component: {fileID: 1235831173}
   - component: {fileID: 1235831172}
   m_Layer: 0
-  m_Name: Image_Background
+  m_Name: ImageBackground
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -907,7 +907,7 @@ GameObject:
   - component: {fileID: 1570210385}
   - component: {fileID: 1570210384}
   m_Layer: 0
-  m_Name: Text_Rotator
+  m_Name: TextRotator
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1290,7 +1290,7 @@ GameObject:
   - component: {fileID: 1936001795}
   - component: {fileID: 1936001794}
   m_Layer: 0
-  m_Name: Text_Oscillator
+  m_Name: TextOscillator
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
