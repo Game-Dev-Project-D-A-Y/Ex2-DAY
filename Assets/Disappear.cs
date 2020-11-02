@@ -1,31 +1,35 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+
 /**
-* This component will show and Disappear the object everytime you'll click the mouse left button !
+* This component will appear and Disappear the object everytime you'll click on the mouse!
 */
 public class Disappear : MonoBehaviour
 {
 
     float startX;
     float startY;
-    // Start is called before the first frame update
+    float scaleX;
+    float scaleY;
+    
     void Start()
     {
         startX = transform.position.x;
         startY = transform.position.y;
+        scaleX = transform.localScale.x;
+        scaleY = transform.localScale.y;
     }
 
-    // Update is called once per frame
     void Update()
     {
-        // By mouse
-
+        // this function will work by mouse
+        
           if(Input.GetMouseButtonDown(0)){
               if(transform.localScale.x == 0){
                    Vector3 show = new Vector3(startX,startY,0);
                    // Input.mousePosition ;
-                    transform.localScale = new Vector3(1,1,0);   
+                    transform.localScale = new Vector3(scaleX,scaleY,0);   
                     transform.position = show ;  
                            // Debug.Log("clicked just" + Input.mousePosition );
                             return;
