@@ -20,7 +20,7 @@ public class Resize : MonoBehaviour
     void Start()
     {
         // Default values: 
-        resize = 2;
+        resize = 1.3f;
         speed = 1;
     }
 
